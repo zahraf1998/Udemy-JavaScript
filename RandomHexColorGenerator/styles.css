@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --yellow: #fff9bf;
+  --green: #86c4ba;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.generator {
+  width: 40rem;
+  border: 4px solid var(--dark-grey);
+  padding: 1rem;
+  background-color: var(--yellow);
+  color: var(--dark-grey);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.generator > * {
+  margin: 3rem;
+}
+.color {
+  font-size: 4rem;
+  border: 3px solid var(--white);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.button {
+  padding: 1rem;
+  margin: 2rem;
+  font-size: 1.5rem;
+  background-color: var(--white);
+  border: 1px solid var(--dark-grey);
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--grey);
+}
