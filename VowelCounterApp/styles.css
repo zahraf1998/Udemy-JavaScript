@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #98cff7;
+  --yellow: #fff9bf;
+  --green: #86c4ba;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.main {
+  width: 60%;
+  max-width: 40rem;
+  min-height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  border: 10px solid var(--yellow);
+}
+
+.vowel {
+  background-color: var(--light-blue);
+  color: var(--blue);
+  text-align: center;
+}
+
+.btn {
+  color: var(--yellow);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--dark-grey);
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--blue);
+  padding: 1rem;
+}
+
+.result {
+  padding: 2rem 0;
+  font-size: 2rem;
+}
