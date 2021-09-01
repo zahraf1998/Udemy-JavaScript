@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Drive Link</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <main>
+      <section class="main-container">
+       
+        <div class="instructions">
+          <div class="container">
+
+            <h2 class="line">Instructions</h2>
+            <p>Follow the instructions below to get your Google Drive file link</p>
+            <hr>
+            <ol>
+              <li>
+                <p>Open <a href="https://drive.google.com">Google Drive</a></p>
+              </li>
+              <li>
+                <p>Right click on a file.</p>
+              </li>
+              <li>
+                <p>Select "Get link" and click "Copy link"</p>
+              </li>
+              <li>
+                <p>Paste the link here and click “Generate Direct Link” button</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="generator">
+          <div class="container">
+
+            <h1>Google Drive Download Link Generator</h1>
+            <input type="radio" id="tab1" name="tab" checked/>
+            <input type="radio" id="tab2" name="tab" />
+            <input type="radio" id="tab3" name="tab" />
+            <nav>
+               <label for="tab1" class="tab1" >
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>Paste Link</span>
+                </label>
+                <label for="tab2" class="tab2" >
+                  <i class="fas fa-headphones-alt"></i>
+                  <span>Embed Audio</span>
+                </label> 
+                <label for="tab3" class="tab3" >
+                  <i class="fas fa-photo-video"></i>
+                  <span>Embed Video/Docs</span>
+                </label>
+                <span class="slide"></span>
+          </nav>
+
+          <section class="content">
+
+            <div class="link-content">
+              <i class="fas fa-download"></i>
+              <h2>Google Drive link</h2>
+              <p>Paste your Google Drive File link below</p>
+              <div class="glink">
+                <i id="gd" class="fab fa-google-drive"></i>
+                <input type="text" id="glink" class="glink" placeholder="Google Drive Link" autocomplete="off" required>
+              </div>
+              <br>
+              <button class="btn" id="btn">Generate Direct Download Link</button>
+              <hr>
+              <h2>Direct Download link</h2>
+              <div class="embed-code">
+                <textarea id="text1" cols="30" rows="10"></textarea>
+                <span class="copy">Copy</span>
+              </div>
+              <button class="btn clear">Clear Form</button>
+            </div>
+
+            <div class="audio-content">
+              <i class="fas fa-headphones-alt"></i>
+              <h2>Audio Embed Link</h2>
+              <p>If your link was an Audio file, use the code snippet to embed it on a web page.</p>
+              <hr>
+              <h2>Audio Embed link</h2>
+              <div class="embed-code">
+                <textarea id="text2" cols="30" rows="10"></textarea>
+                <span class="copy">Copy</span>
+              </div>
+            </div>
+
+            <div class="video-content">
+              <i class="fas fa-photo-video"></i>
+              <h2>Video/Doc Embed Link</h2>
+              <p>If your link was an Video or Document, use the code snippet to embed it on a web page.</p>
+              <hr>
+              <h2>Video/Document Embed link</h2>
+              <div class="embed-code">
+                <textarea id="text3" cols="30" rows="10"></textarea>
+                <span class="copy">Copy</span>
+              </div>
+            </div>
+
+          </section>
+          
+         </div>
+        </div>
+
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

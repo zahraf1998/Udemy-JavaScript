@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #98cff7;
+  --yellow: #fff9bf;
+  --green: #86c4ba;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  width:100%
+}
+
+.main-container {
+  display: flex;
+}
+
+.instructions {
+  min-height: 100vh;
+  width: 30%;
+  background-color: var(--blue);
+  color: var(--yellow);
+}
+
+.instructions h2 {
+  color: #cf9a6b;
+  font-size: 2rem;
+}
+
+.instructions a {
+  color: #cf9a6b;
+}
+
+.generator {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.generator h1 {
+  font-size: 2.5rem;
+  color: #cf9a6b;
+  margin-bottom: 10px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.generator nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: #31326f;
+  font-size: 1.1rem;
+  background-color: var(--yellow);
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+}
+
+label {
+  cursor: pointer;
+  z-index: 1;
+  width: 25%;
+}
+
+.slide {
+  position: absolute;
+  background-color: var(--blue);
+  border-radius: 5px;
+  height: 100%;
+  width: 33%;
+  bottom: 0;
+  left: 1%;
+  transition: all 0.3s;
+}
+section.content {
+  border:2px solid #cf9a6b;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section.content > *{
+  display: none;
+  width: 70%;
+}
+
+.generator .content h2 {
+  color: var(--blue);
+}
+
+.generator .content i {
+  font-size: 2rem;
+  border: 2px solid #cf9a6b;
+  color: #cf9a6b;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 5px;
+}
+
+.generator .content p {
+  font-size: 1.2rem;
+  color: var(--dark-grey);
+}
+
+.btn {
+  padding: 5px;
+  background-color: var(--light-blue);
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  color: var(--dark-grey);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.btn.clear {
+  background-color: #f8996d;
+  border: 1px solid var(--dark-grey);
+}
+
+.generator .content textarea {
+  outline: none;
+  background-color: var(--yellow);
+  width: 100%;
+  margin: 5px 0;
+}
+
+.embed-code {
+  position: relative;
+}
+.copy {
+  position: absolute;
+  bottom: 10px;
+  right: 1px;
+  padding: 5px;
+  background-color: var(--light-blue);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.copy:hover {
+  font-size: 1.5rem;
+}
+
+.link-content div.glink {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+}
+
+input.glink {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 4rem;
+  border: 1px solid transparent;
+  border-radius: 10px 0 10px 0;
+  border-bottom: 2px solid rgba(0,0,0,.4);
+  background-color: rgba(0,0,0,.1);
+  outline: none;
+  color: var(--dark-grey);
+  transition: all .3s;
+}
+
+input.glink:invalid {
+  font-size: 1.6rem;
+}
+
+input.glink:valid {
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--green);
+  background-color: #E8F0FE;
+}
+
+i#gd {
+  position: absolute;
+  left: 1rem;
+  top: 1.3rem;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+::placeholder {
+  color: grey;
+  font-size: 1.5rem;
+}
+
+#tab1:checked ~ nav label.tab1,
+#tab2:checked ~ nav label.tab2,
+#tab3:checked ~ nav label.tab3 {
+  color: var(--yellow);
+}
+
+#tab1:checked ~ section.content .link-content,
+#tab2:checked ~ section.content .audio-content,
+#tab3:checked ~ section.content .video-content {
+  display: block;
+}
+
+#tab2:checked ~ nav .slide {
+  left: 33%;
+}
+
+#tab3:checked ~ nav .slide {
+  left: 66%;
+}
+
+
+@media screen and (max-width : 768px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+  
+  .instructions {
+    width: 100%;
+    height: initial;
+  }
+  .generator {
+    width: 100%;
+  }
+}
+
+
