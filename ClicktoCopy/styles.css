@@ -1,0 +1,43 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(76, 61, 104);
+  color: antiquewhite;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form > * {
+  background-color: blanchedalmond;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+} 
+
+button:hover {
+  background-color: burlywood;
+}
