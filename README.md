@@ -1,2 +1,2 @@
 # Udemy-JavaScript
-Some js practices
+JS practice
